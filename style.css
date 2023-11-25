@@ -9,6 +9,48 @@
   align-items: center;
   position: relative;
 }
+.bg-image2 {
+  background-image: url(img/lastBg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+}
+.bg-image3 {
+  background-image: url(img/bg-footer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+}
+
+.opacity2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.75
+  ); /* Adjust the last parameter for darkness level (0 is fully transparent, 1 is fully opaque) */
+}
+
+.blue-text {
+  z-index: 1; /* Make sure the text appears above the overlay */
+  color: white; /* Set the text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Apply a text shadow for better visibility */
+}
+
 .opacity {
   position: absolute;
   top: 0;
@@ -19,7 +61,7 @@
     0,
     0,
     0,
-    0.6
+    0.75
   ); /* Adjust the last parameter for darkness level (0 is fully transparent, 1 is fully opaque) */
 }
 .content {
@@ -156,6 +198,144 @@ body {
 .p_border_color {
   border-color: rgb(49, 48, 48);
 }
+.underline {
+  display: inline-block;
+  border-bottom: 2px solid rgb(49, 48, 48); /* Change this to your desired color */
+  margin-bottom: 10px; /* Adjust spacing as needed */
+  width: 40%;
+}
 .p_small_fontSize {
   font-size: 14px;
+}
+.p_small_fontSize2 {
+  font-size: 11px;
+}
+.p_width_card {
+  width: 500px;
+}
+
+.fakeBody {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #010101;
+}
+
+.gallery-container {
+  perspective: 1200px;
+}
+
+.gallery {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 35s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.gallery span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+}
+
+.gallery span img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.link-muted {
+  color: #aaa;
+}
+.link-muted:hover {
+  color: #1266f1;
+}
+
+@media (min-width: 0) {
+  .g-mr-15 {
+    margin-right: 1.07143rem !important;
+  }
+}
+@media (min-width: 0) {
+  .g-mt-3 {
+    margin-top: 0.21429rem !important;
+  }
+}
+
+.g-height-50 {
+  height: 50px;
+}
+
+.g-width-50 {
+  width: 50px !important;
+}
+
+@media (min-width: 0) {
+  .g-pa-30 {
+    padding: 2.14286rem !important;
+  }
+}
+
+.g-bg-secondary {
+  background-color: #fafafa !important;
+}
+
+.u-shadow-v18 {
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.15);
+}
+
+.g-color-gray-dark-v4 {
+  color: #777 !important;
+}
+
+.g-font-size-12 {
+  font-size: 0.85714rem !important;
+}
+
+.media-comment {
+  margin-top: 20px;
+}
+
+.g-bg-white,
+.g-color-black {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  text-shadow: none !important;
+}
+.g-mr-15,
+.g-mt-3,
+.g-height-50,
+.g-width-50,
+.g-pa-30,
+.g-bg-secondary,
+.u-shadow-v18,
+.g-color-gray-dark-v4,
+.g-font-size-12,
+.media-comment {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+input:focus {
+  outline: none;
+}
+input {
+  background: transparent;
+  outline: none; /* Supprime l'outline lors du focus */
+  border: none; /* Supprime la bordure par défaut */
 }

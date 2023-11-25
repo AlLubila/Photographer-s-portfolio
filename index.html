@@ -23,6 +23,45 @@
   </head>
 
   <body>
+     <!--Photo gallery-->
+     <section class="vh-100 bg-dark fakeBody">
+      <div class="container ">
+        <h2 class="fs-3 fw-bold text-white ">
+          <span class="underline pb-2">Phto gallery</span>
+        </h2>
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit esse nam.</p>
+      </div>
+     
+      <div class="gallery-container">
+        <div class="gallery">
+          <span style="--i:1">
+            <img src="img/photoGallery1.jpg" alt="" />
+          </span>
+          <span style="--i:2">
+            <img src="img/photoGallery2.jpg" alt="" />
+          </span>
+          <span style="--i:3">
+            <img src="img/photoGallery3.jpg" alt="" />
+          </span>
+          <span style="--i:4">
+            <img src="img/photoGallery4.jpg" alt="" />
+          </span>
+          <span style="--i:5">
+            <img src="img/photoGallery5.jpg" alt="" />
+          </span>
+          <span style="--i:6">
+            <img src="img/photoGallery6.jpg" alt="" />
+          </span>
+          <span style="--i:7">
+            <img src="img/photoGallery7.jpg" alt="" />
+          </span>
+          <span style="--i:8">
+            <img src="img/photoGallery8.jpg" alt="" />
+          </span>
+        </div>
+      </div>
+      
+    </section>
     <main>
       <!--The 6 sections of site-->
 
@@ -93,7 +132,7 @@
               <img
                 src="img/image2.jpg"
                 alt="Photographer"
-                class="mx-auto d-block shadow-image"
+                class="mx-auto d-block shadow-image d-none d-lg-block img-lg-fluid"
                 width="350px"
                 height="400px"
               />
@@ -192,11 +231,118 @@
       </section>
       <!--The third section-->
 
-      <section class="vh-100"></section>
-      <section class="vh-100"></section>
-      <section class="vh-100"></section>
-      <!--The 6 sections of site-->
+
+      <!--The fourth section-->
+      <section class=" mt-5 pt-5 mb-5 ">
+        <div class="container ">
+          <div class="ms-5 text-start mb-5">
+            <h2 class="fw-bold ms-3 mb-4 ps-1">Our advantages</h2>
+            <p class="ms-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              optio quae.
+            </p>
+          </div>
+
+          <img
+            src="img/goodImage4.jpg"
+            width="500px"
+            height="350px"
+            class="float-end me-2 img-fluid"
+            alt="..."
+          />
+          
+            <div class="card-body border p_width_card mt-5 p-3 border-white bg-dark">
+              <button disabled class="bg-white p-2 my-3 p_small_fontSize2 border text-dark">RESOURCES</button>
+              <h2 class="card-title fs-5 pb-3 fw-bold text-white">
+                Because every picture tells a story, <br />
+                let us help you tell yours
+              </h2>
+              <div class="border-bottom mb-4">
+                <p class="card-text mb-3 text-white p_small_fontSize">
+                  Lorem ipsum dolor sit amet consectetur adipisicing voluptate
+                  adipisci dignissimos facilis omnis reprehenderit tota
+                  architecto laboriosam? Id cum nobis tempore.
+                </p>
+              </div>
+              <a href="#" class="text-white text-decoration-none">READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+      <section class="bg-image2 img-fluid">
+        <div class="opacity2"></div>
+        <div class="container text-center">
+          <div class="row align-items-start">
+            <div class="col blue-text">
+              <div class="content m-5 text-start">
+                <p class="fs-4 fw-bold ">Have a photography need? Tell us all about the photographs you would like to get</p>
+                <button
+                  class="btn rounded-pill border border-1 py-2 px-4 custom-btn2"
+                >
+                  Contact us
+                </button>
+              </div>
+            </div>
+
+            <!--Comments-->
+            <div class="col blue-text">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="media g-mb-30 media-comment g-bg-white g-color-black"> <!-- Apply g-bg-white and g-color-black classes here -->
+                     <div class="pt-4 ps-3">
+                      <img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15 " src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Image Description">
+                     </div>
+                      <div class="media-body u-shadow-v18 g-pa-30">
+                        <div class="g-mb-15 mt-3">
+                          <h5 class="h5 mb-0 ">John Doe</h5>
+                          <span class="g-color-gray-dark-v4 g-font-size-12">Lead photographer</span>
+                        </div>
+            
+                        <p class="text-start p-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam nobis amet, fugiat nisi nostrum perspiciatis.</p>
+                       <div class="p-3">
+                        
+                       </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+      
+      <!--The footer-->
+      <section class="bg-image3 img-fluid">
+        <div class="opacity2"></div>
+        <div class="container text-center">
+          <div class="row align-items-start">
+            <div class="col blue-text">
+              <div class="content m-5 text-start">
+                <p class="fs-4 fw-bold">Sign up to our newsletter</p>
+                <p class="p_small_fontSize">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="col blue-text">
+              <div class="content m-5 text-start">
+
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="button-addon2">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe now</button>
+                </div>
+                
+                
+              </div>
+            </div>
+            </div>
+            </div>
+
+            
+      </section>
     </main>
-    <footer>Footer</footer>
+     
+
   </body>
 </html>
